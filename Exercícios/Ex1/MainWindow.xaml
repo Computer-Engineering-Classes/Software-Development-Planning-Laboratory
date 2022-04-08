@@ -1,0 +1,28 @@
+﻿<Window x:Class="Ex1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ex1"
+        mc:Ignorable="d"
+        Title="LPDSW Exercício 1" Height="450" Width="800">
+    <Grid>
+        <DatePicker HorizontalAlignment="Left" Margin="810,558,0,0" VerticalAlignment="Top"/>
+        <GroupBox Header="Evento" HorizontalAlignment="Left" Height="339" Margin="37,10,0,0" VerticalAlignment="Top" Width="716">
+            <Grid Height="302">
+                <Label Content="Designação" HorizontalAlignment="Left" Margin="121,35,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+                <Label Content="Data" HorizontalAlignment="Left" Margin="159,100,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+                <Label Content="Hora de início" HorizontalAlignment="Left" Margin="107,158,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+                <TextBox Name="boxDesignacao" HorizontalAlignment="Left" Height="26" Margin="223,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="383"/>
+                <DatePicker Name="DataEvento" HorizontalAlignment="Left" Height="26" Margin="223,100,0,0" VerticalAlignment="Top" Width="116" SelectedDateFormat="Short"/>
+                <Label Content="Duração (minutos)" HorizontalAlignment="Left" Margin="81,237,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+                <TextBox Name="boxHoraInicio" HorizontalAlignment="Left" Height="21" Margin="223,160,0,0" Text="&#xD;&#xA;" TextWrapping="Wrap" VerticalAlignment="Top" Width="55"/>
+                <TextBox Name="boxDuracao" HorizontalAlignment="Left" Height="21" Margin="223,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="55"/>
+                <Label Content="Minutos de início" HorizontalAlignment="Left" Margin="88,198,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+                <TextBox x:Name="boxMinutoInicio" HorizontalAlignment="Left" Height="21" Margin="223,200,0,0" Text="&#xA;" TextWrapping="Wrap" VerticalAlignment="Top" Width="55"/>
+            </Grid>
+        </GroupBox>
+        <Button Content="Adicionar" HorizontalAlignment="Left" Height="27" Margin="335,368,0,0" VerticalAlignment="Top" Width="120" Click="Aceitar_Click"/>
+
+    </Grid>
+</Window>

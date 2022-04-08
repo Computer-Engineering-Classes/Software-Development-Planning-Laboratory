@@ -1,0 +1,19 @@
+﻿<Window x:Class="Ex2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ex2"
+        mc:Ignorable="d"
+        Title="Janela Principal" Height="237" Width="325">
+    <Grid>
+        <ListBox Name="ItemsList" Margin="0,0,0,51">
+            <ListBoxItem Content="Texto do elemento 1" MouseDoubleClick="ListBoxItem_MouseDoubleClick"/>
+            <ListBoxItem Content="Texto do elemento 2" MouseDoubleClick="ListBoxItem_MouseDoubleClick"/>
+            <ListBoxItem Content="Texto do elemento 3" MouseDoubleClick="ListBoxItem_MouseDoubleClick"/>
+            <ListBoxItem Content="Texto do elemento 4" MouseDoubleClick="ListBoxItem_MouseDoubleClick"/>
+        </ListBox>
+        <Button Name="ButtonExit" Content="Sair" HorizontalAlignment="Center" Margin="0,170,0,0" VerticalAlignment="Top" Width="57" Click="ButtonExit_Click"/>
+
+    </Grid>
+</Window>

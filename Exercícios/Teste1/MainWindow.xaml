@@ -1,0 +1,22 @@
+﻿<Window x:Class="Ex2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ex2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="238">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="75*"/>
+            <ColumnDefinition Width="44*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Valor 1" HorizontalAlignment="Left" Height="26" Margin="46,73,0,0" VerticalAlignment="Top" Width="53" FontWeight="Bold"/>
+        <Label Content="Valor 2" HorizontalAlignment="Left" Height="26" Margin="46,128,0,0" VerticalAlignment="Top" Width="53" FontWeight="Bold"/>
+        <TextBox Name="BoxValor1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="24" Margin="119,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75"/>
+        <TextBox Name="BoxValor2" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="24" Margin="119,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="75"/>
+        <Button Name="ButtonSoma" Content="Calcular Soma" HorizontalAlignment="Left" Height="26" Margin="28,216,0,0" VerticalAlignment="Top" Width="89" Click="ButtonSoma_Click"/>
+        <TextBox Name="Resultado" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="26" Margin="133,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="73"/>
+
+    </Grid>
+</Window>
